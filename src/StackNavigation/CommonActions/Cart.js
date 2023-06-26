@@ -8,7 +8,8 @@ const Cart = ({navigation,route}) => {
   console.warn(route);
   return (
     <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-      <Text>Cart</Text>
+      <Text>{route.name}</Text>
+      <Text>{route?.params?.notify?? ''}</Text>
       <TouchableOpacity style={{
         backgroundColor:'#0096FF',
         padding:15,

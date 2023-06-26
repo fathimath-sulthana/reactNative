@@ -1,15 +1,15 @@
 import { View, Text ,TouchableOpacity} from 'react-native'
 import React from 'react'
-import { CommonActions } from '@react-navigation/native'
+import { CommonActions ,StackActions} from '@react-navigation/native'
 const Notification = ({navigation,route}) => {
+  console.warn(route);
     const handleNavigate=() =>{
-        navigation.dispatch(
-            CommonActions.navigate('Settings')
-        )
+        navigation.dispatch(StackActions.push('Wishlist',{profileId:'1234'}))
     }
   return (
     <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-      <Text>Notification</Text>
+      <Text>{route.name}</Text>
+      <Text>{route?.params?.user?? ''}</Text>
       <TouchableOpacity style={{
         backgroundColor:'#0096FF',
         padding:15,

@@ -9,7 +9,7 @@ import Wishlist from './Wishlist'
 import Profile from './Profile'
 import Cart from './Cart'
 const Stack = createStackNavigator()
-const navigationHooks = () => {
+const MainStack = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -24,4 +24,4 @@ const navigationHooks = () => {
   )
 }
 
-export default navigationHooks
+export default MainStack;

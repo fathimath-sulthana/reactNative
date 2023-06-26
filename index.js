@@ -18,4 +18,7 @@ import MaterialTop from './src/MaterialTopTab/MaterialTop';
 import navigationHooks from './src/StackNavigation/CommonActions/navigationHooks';
 import MainStack from './src/StackNavigation/StackActions/MainStack';
 import GreetingComponent from './src/StackNavigation/StackActions/Home';
-AppRegistry.registerComponent(appName, () =>MainStack)
+import MainHeader from './src/CustomHeader/MainHeader';
+import First from './src/CoreComponents/First';
+import textInput from './src/CoreComponents/textInput';
+AppRegistry.registerComponent(appName, () => textInput)

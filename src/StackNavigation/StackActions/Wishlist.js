@@ -1,13 +1,13 @@
 import { View, Text ,TouchableOpacity} from 'react-native'
 import React from 'react'
-import { CommonActions } from '@react-navigation/native'
+import { CommonActions ,StackActions} from '@react-navigation/native'
 const Wishlist = ({navigation}) => {
   const handleNavigate =() =>{
-    navigation.dispatch(CommonActions.goBack())
+    navigation.dispatch(StackActions.pop(1))
   }
   return (
     <View style={{flex:1,justifyContent:'center',alignItems:'center'}}>
-      <Text>Wishlist</Text>
+      <Text>pop</Text>
       <TouchableOpacity style={{
         backgroundColor:'#0096FF',
         padding:15,
