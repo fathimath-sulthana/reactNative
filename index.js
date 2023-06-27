@@ -21,4 +21,13 @@ import GreetingComponent from './src/StackNavigation/StackActions/Home';
 import MainHeader from './src/CustomHeader/MainHeader';
 import First from './src/CoreComponents/First';
 import textInput from './src/CoreComponents/textInput';
-AppRegistry.registerComponent(appName, () => textInput)
+import scrollView from './src/CoreComponents/scrollView';
+import styleSheet from './src/CoreComponents/styleSheet';
+import flatList from './src/CoreComponents/flatList';
+import sectionList from './src/CoreComponents/sectionList';
+import touchComponents from './src/CoreComponents/touchComponents';
+import Title from './src/CustomHeader/Title';
+import touchComponents2 from './src/CoreComponents/touchComponents2';
+import OtherComponents from './src/CoreComponents/OtherComponents';
+import reduxMain from './src/Redux/reduxMain';
+AppRegistry.registerComponent(appName, () => reduxMain)

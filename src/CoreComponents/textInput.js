@@ -5,15 +5,30 @@ const textInput = () => {
     const inputText =text =>{
         console.warn(text)
     }
+    const onEndEditing =response =>{
+      console.warn(response.nativeEvent.text)
+  }
+  const onBlur =text =>{
+    console.warn(text)
+}
+const onPressIn =event =>{
+  console.warn(event.nativeEvent,'onPressIn')
+}
   return (
     <View style={{flex:1}} >
      <TextInput
      placeholder='enter name'
      keyboardType='email-address'
+     onEndEditing={onEndEditing}
      onChangeText={inputText}
-     multiline={true}
+     onBlur={onBlur}
+     onPressIn={onPressIn}
+    // multiline={true}
      numberOfLines={3}
      maxLength={25}
+     placeholderTextColor={'red'}
+     returnKeyLabel='Hai'
+     returnKeyType='send'
      />
     </View>
   )
