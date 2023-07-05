@@ -55,7 +55,7 @@ const DrawerNav =() =>{
 const MainHeader = () => {
   return ( 
    <NavigationContainer>
-    <Stack.Navigator>
+    <Stack.Navigator >
         <Stack.Screen name='Profile' component={Profile} options={{
             title:'hi, user',
             headerStyle:{

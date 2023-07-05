@@ -1,12 +1,13 @@
 import { StyleSheet, Text, View ,Button} from 'react-native'
 import React from 'react'
-
+import { Provider } from 'react-redux'
+import Home from './Home'
+import store from './store'
 const reduxMain = () => {
   return (
-    <View>
-   <Button title='Increment'/>
-   <Button title='Decrement'/>
-    </View>
+    <Provider store={store}>
+      <Home/>
+    </Provider>
   )
 }
 

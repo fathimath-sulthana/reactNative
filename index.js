@@ -30,4 +30,8 @@ import Title from './src/CustomHeader/Title';
 import touchComponents2 from './src/CoreComponents/touchComponents2';
 import OtherComponents from './src/CoreComponents/OtherComponents';
 import reduxMain from './src/Redux/reduxMain';
-AppRegistry.registerComponent(appName, () => reduxMain)
+import fetchNetworking from './src/RnNetworking/fetchNetworking';
+import axiosFile from './src/RnNetworking/axiosFile';
+import xmlHttpRequestFile from './src/RnNetworking/xmlHttpRequestFile';
+import TextFile from './src/CustomFont/TextFile';
+AppRegistry.registerComponent(appName, () => TextFile)
